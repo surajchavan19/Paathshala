@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+    padding:0;
+  }
+  img{
+  
+    max-width: 100%;
+    height: auto;
+  }
+  .col-sm-6{
+    margin-top: 10vh;
+  
+  }
+  section{
+    padding-bottom: 5%;
+  
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 55%;
+  }
+  .text2{
+    padding-left: 10% !important;
+    padding-bottom: 7% !important;
+    /* padding-top: 7% !important; */
+  }
+  .text1{
+    padding-right: 10% !important;
+    padding-bottom: 7% !important;
+    /* padding-top: 5% !important; */
+  
+  }
+  .text3{
+    padding-right: 10% !important;
+    padding-bottom: 7% !important;
+    /* padding-top: 2% !important; */
+  
+  }
+  div.polaroid1 {
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  div.polaroid2 {
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 7%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  div.polaroid3 {
+    margin-left: 5%;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+  
+  }
+  .heading{
+    margin-bottom: 5%;
+    font-size: 15px;
+  }
+  div.container {
+    padding: 10px;
+  }
+  body {
+      font-family: 'Playfair Display';
+      font-size: 22px;
+      font-weight: 600;
+  }
+  

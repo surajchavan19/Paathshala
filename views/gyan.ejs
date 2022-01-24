@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title></title>
+    <!-- Font Awesome -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+  href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+  rel="stylesheet"
+/>
+    <!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+></script>
+<style media="screen">
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 32%;
+  padding: 5px;
+  background: white;
+
+  margin-right: 2vh;
+  margin-top: 2vh;
+  padding-top:3vh;
+  padding-bot: 3vh;
+  border: 1px solid black;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  body{
+    margin:0;
+    padding:0;
+    background-color: #EAF4FE;
+  }
+  nav{
+    background: white;
+  }
+  .col-sm-6{
+    height: 90vh;
+    text-align:center;
+  }
+  .brain{
+    text-align: center;
+  }
+  h5{
+    color:#0051ed;
+  }
+</style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light " >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/video" style="margin-left:2vw;color: #0051ed; font-weight: bold; ">Courses</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item" style="margin-left: 10vh; margin-top: -0.5vh; ">
+                 <input type="text" style="border-radius: 5px; margin-top: 1.2vh; height: 5vh; border:1.5px solid grey; text-align: center;" placeholder="Search Courses" >
+            </li>
+            <li class="nav-item  ml-auto" >
+              <img src="images/Paathshala.png" alt="" width="150" style="margin-top: 2vh;margin-left: 18vw">
+            </li>
+            <div class="dropdown" style="margin-left: 200px; margin-top: 1vh;">
+              <!-- <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fas fa-bullhorn" style="color: #0051ed; font-size: 20px;">Alerts</i>
+              </button> -->
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               
+              </ul>
+            </div>
+            <li class="nav-item  ml-auto" style="margin-top: 1vh; font-weight: bold;" >
+
+              <a class="nav-link " href="/gyan" style="margin-left: 10vh; color: #0051ed;" class="gradient-border" type="button"  d>Gyan</a>
+                             <!-- <a class="nav-link " href="#" style="margin-left: 5vh; , color: #0051ed;" class="gradient-border" type="button"  d>Gyan</a> -->
+            </li>
+            <li class="nav-item ml-auto" style="margin-top: 1vh; font-weight: bold;">
+              <a class="nav-link" href="/home1"  style="color: #0051ed;">Home </a>
+            </li>
+          </ul>
+          <span class="navbar-text">
+
+          </span>
+        </div>
+      </div>
+    </nav>
+
+  <!-- <div class="container">
+  <div class="row">
+    <div class="col-sm-6">
+      1 of 2
+    </div>
+    <div class="col-sm-6">
+      2 of 2
+    </div>
+  </div>
+
+</div> -->
+<div class="container" style="margin-top: 4vh;">
+
+
+<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Fun-Facts & Riddles</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Motivational Vidoes</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Projects</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="container brain">
+    <div class="row">
+    <div class="column">
+      <h4>How to solve a 3x3 rubix cube</h4><hr>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/KGvQRaK1mvs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+      <h4>Can you solve this Riddle?</h4><hr>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/mCbGRjPC78M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+      <h4>15 myths you were told at school</h4><hr>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/z2CK8F8wrdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <h4>What if a Second lasted an hour?</h4><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/KD3YrS07CJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  <div class="column">
+    <h4>Who will survive?</h4><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/TcQpgpIxc3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="column">
+    <h4>What if money never ended?</h4><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/YjUwTDIYZWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</div>
+</div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+    <div class="container brain">
+    <div class="row">
+    <div class="column">
+      <h4>Thoughts on humanity, fame and love</h4>
+      <h5>Shah Rukh Khan</h5><hr>
+      <iframe width="400" height="300" src="https://www.youtube.com/embed/0NV1KdWRHck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+      <h4>What makes life Complex?</h4>
+      <h5>Gaur Gopal Das</h5><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/LTnI7cmpDZI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+      <h4>The mind behind Tesla, SpaceX..</h4>
+      <h5>Elon Musk</h5><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/IgKWPdJWuBQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+    <div class="row">
+    <div class="column">
+    <h4>How to learn anything</h4>
+    <h5>Josh Kaufman</h5><hr>
+  <iframe width="400" height="300" src="https://www.youtube.com/embed/5MgBikgcWnY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+    <h4>Putting Everyday Life on Trial</h4>
+    <h5>Anubhav Bassi</h5><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/LKPD_a4xd7M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="column">
+    <h4>Unwavering Focus</h4>
+    <h5>Dandapani</h5><hr>
+    <iframe width="400" height="300" src="https://www.youtube.com/embed/4O2JK_94g3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+    <div class="container brain">
+    <div class="row">
+    <div class="column">
+      <h4>Drum-Kit</h4>
+      <a href="https://surajchavan19.github.io/DRUM/"><h5>Project link</h5></a><hr>
+      <img src="https://user-images.githubusercontent.com/38256861/130568605-b6386895-5f2b-4c7d-9213-e3d20eb95025.png" alt="" width="400" height="">
+    </div>
+    <div class="column">
+      <h4>Dice-Roll</h4>
+      <a href="https://surajchavan19.github.io/DICEROLL/"><h5>Project link</h5></a><hr>
+      <img src="https://user-images.githubusercontent.com/38256861/130574506-16654673-0ac8-449c-ac42-89bea132f169.png" alt="" width="400" height="">
+    </div>
+    <div class="column">
+      <h4>Sequence Game</h4>
+      <a href="https://surajchavan19.github.io/SEQUENCEGAME/"><h5>Project link</h5></a><hr>
+      <img src="https://user-images.githubusercontent.com/38256861/130576938-e6c53d44-1a97-4b7b-a712-a95461398ba8.png" alt="" width="400" height="">
+    </div>
+  </div>
+
+</div>
+  </div>
+</div>
+
+
+
+
+  </body>
+  <script type="text/javascript">
+    const triggerTabList = [].slice.call(document.querySelectorAll('#myTab a'));
+triggerTabList.forEach((triggerEl) => {
+  const tabTrigger = new mdb.Tab(triggerEl);
+
+  triggerEl.addEventListener('click', (event) => {
+    event.preventDefault();
+    tabTrigger.show();
+  });
+});
+  </script>
+</html>

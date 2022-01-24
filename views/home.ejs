@@ -1,0 +1,553 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <title>PaathShala </title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+         body {
+    font-family: -apple-system-subheadline, BlinkMacSystemFont, sans-serif;
+}
+
+
+        .flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+background-color: #EAF4FE;
+    /* margin: 26px;
+    padding: 12px; */
+    margin-top: -3vh;
+    height: 600px;
+
+    /* border: 2px solid black; */
+  }
+
+  .flex-item-left {
+    background: transparent;
+    padding: 18px;
+    flex: 50%;
+    margin: 3px;
+    /* border: 2px solid black; */
+  }
+
+  .flex-item-right {
+    background: transparent;
+    padding: 18px;
+    margin: 3px;
+    /* border: 2px solid black; */
+    flex: 50%;
+  }
+
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+
+  }
+  .row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.container{
+	max-width: 2020px;
+	margin:auto;
+}
+.footer{
+	background-color: rgb(69, 103 , 163);
+    padding: 70px 0;
+    height: 400px;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+p{
+  color: #ffffff;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #ffffff;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+#features{
+  text-align: center;
+  	background-color:#EAF4FE;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 5vh;
+
+}
+#features h1{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+}
+#features h3{
+  color:blue;
+  margin-top: 1vh;
+  margin-bottom: 2vh;
+}
+#features p{
+padding-left: 5%;
+padding-right: 5%;
+  color: black;
+  margin-bottom: 5vh;
+}
+    </style>
+  </head>
+  <body style="width: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-light " >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/video" style="margin-left:2vw;color: #0051ed; font-weight: bold; ">Courses</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item" style="margin-left: 10vh; margin-top: -0.5vh; ">
+                   <input type="text" style="border-radius: 5px; margin-top: 1.2vh; height: 5vh; border:1.5px solid grey; text-align: center;" placeholder="Search Courses" >
+              </li>
+              <li class="nav-item  ml-auto" >
+                <img src="images/Paathshala.png" alt="" width="150" style="margin-top: 2vh;margin-left: 18vw">
+              </li>
+              <li class="nav-item  ml-auto" style="margin-top: 1vh; font-weight: bold;" >
+                <a class="nav-link " href="#" style="margin-left: 55vh; color: #0051ed;;" class="gradient-border"  type="button" data-bs-toggle="modal" data-bs-target="#exampleModal1" data-bs-whatever="@fat">Login</a>
+              </li>
+              <li class="nav-item ml-auto" style="margin-top: 1vh; font-weight: bold;">
+                <a class="nav-link" href="#"  style="color: #0051ed;" class="gradient-border" type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Sign up </a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+
+            </span>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+<div class="flex-container "  style="margin-top: 1vh; height: 90vh;">
+    <div class="flex-item-left " data-aos="fade-right">
+        <svg width="625
+        " height="700" viewBox="0 0 979 705" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M309.041 298.113V220.213H307.791V299.313H452.668V298.113H309.041Z" fill="#B5CDFB"/>
+            <path opacity="0.3" d="M108.013 89.7988H176.036V562.069H108.013V89.7988Z" fill="#B5CDFB"/>
+            <path opacity="0.3" d="M187.667 89.7988H255.69V562.069H187.667V89.7988Z" fill="#B5CDFB"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M587.928 165.333H491.753V286.112H452.668V287.312H493.003V166.533H587.928V165.333Z" fill="#B5CDFB"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M309.04 208.214V149.06H307.791V208.214H309.04Z" fill="#B5CDFB"/>
+            <path d="M626.494 267.062H878.196V299.219H626.494V267.062Z" fill="black"/>
+            <path d="M826.849 613.007H471.21" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M914.734 613.007H847.856" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M914.227 346.483H669.122" stroke="#DFE2E4" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M62.6017 605.807C56.7265 599.153 59.2841 584.169 62.3263 584.169C67.3265 584.169 71.6085 601.453 71.6085 601.453C71.6085 601.453 77.7823 578.5 90.2804 567.699C90.2804 567.699 92.909 587.852 90.4088 598.652C90.4088 598.652 98.0132 581.806 108.012 585.406C108.012 585.406 100.247 612.427 98.4795 613.608" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M859.553 613.14C859.553 613.14 867.355 590.069 864.485 572.494C854.216 578.286 849.814 584.859 849.814 584.859C849.814 584.859 848.754 578.5 836.256 567.699C836.256 567.699 833.628 587.852 836.128 598.652C831.51 592.546 826.121 587.483 818.524 585.406C818.524 585.406 823.368 612.609 835.434 613.007" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M308.417 107.031C326.461 107.031 341.09 121.077 341.09 138.402C341.09 155.727 326.461 169.773 308.417 169.773C290.372 169.773 275.744 155.727 275.744 138.402C275.744 121.077 290.372 107.031 308.417 107.031ZM342.34 138.402C342.34 120.413 327.152 105.831 308.417 105.831C289.682 105.831 274.494 120.413 274.494 138.402C274.494 156.39 289.682 170.973 308.417 170.973C327.152 170.973 342.34 156.39 342.34 138.402Z" fill="#B5CDFB"/>
+            <path d="M308.417 147.866C302.974 147.866 298.561 143.629 298.561 138.402C298.561 133.176 302.974 128.939 308.417 128.939C313.86 128.939 318.273 133.176 318.273 138.402C318.273 143.629 313.86 147.866 308.417 147.866Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M535.951 217.458C541.049 217.458 545.181 221.428 545.181 226.323C545.181 231.218 541.049 235.186 535.951 235.186C530.851 235.186 526.719 231.218 526.719 226.323C526.719 221.428 530.851 217.458 535.951 217.458ZM546.431 226.323C546.431 220.764 541.739 216.259 535.951 216.259C530.161 216.259 525.469 220.764 525.469 226.323C525.469 231.88 530.161 236.385 535.951 236.385C541.739 236.385 546.431 231.88 546.431 226.323Z" fill="#B5CDFB"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M468.656 141.915H522.9V140.715H467.406V226.321H468.656V141.915Z" fill="#B5CDFB"/>
+            <path d="M376.611 395.678L382.752 400.627L421.708 224.47L412.688 223.807C409.593 223.579 406.811 225.612 406.213 228.536L373.709 387.786C373.109 390.729 374.221 393.751 376.611 395.678Z" fill="black"/>
+            <path d="M308.417 405.115C308.417 405.115 327.515 390.164 333.215 390.556C338.915 390.949 358.925 410.701 356.8 416.921C354.675 423.14 346.91 423.14 346.91 423.14C343.033 423.14 339.434 421.131 337.593 417.855C335.413 413.975 332.348 409.595 330.197 410.91C326.509 413.163 329.613 423.14 327.055 423.14C324.497 423.14 308.417 418.313 308.417 418.313V405.115Z" fill="#B08566"/>
+            <path d="M176.036 346.71L197.58 397.974C199.648 403.93 208.079 415.583 214.555 414.71L292.639 407.884" stroke="#CCCCCC" stroke-width="39.8" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M187.595 319.054C186.92 313.57 186.57 308.71 187.07 306.79C188.12 302.734 197.919 303.418 202.93 304.042C204.692 304.258 205.867 304.474 205.867 304.474L203.781 301.005V300.994L203.767 300.982L185.932 271.389L155 267.285L164.462 285.957C167.173 299.158 152.263 319.642 152.263 319.642L191.144 341.387C191.144 341.387 188.833 329.147 187.595 319.054Z" fill="#C79775"/>
+            <path d="M172.609 294.623C172.609 294.623 176.121 317.304 187.595 319.056C186.92 313.573 186.57 308.712 187.07 306.792C188.12 302.736 197.919 303.421 202.93 304.044L203.781 301.008V300.995L203.767 300.984L186.658 292.02L172.609 294.623Z" fill="#7D4921"/>
+            <path d="M221.677 268.139C222.359 268.139 223.016 267.78 223.347 267.159C223.82 266.274 223.455 265.189 222.534 264.736L216.886 261.96C215.966 261.506 214.835 261.856 214.363 262.742C213.89 263.627 214.256 264.711 215.178 265.163L220.824 267.94C221.098 268.075 221.389 268.139 221.677 268.139Z" fill="#383838"/>
+            <path d="M217.261 281.197C220.899 281.197 223.93 276.31 224.36 269.662C224.556 266.623 224.146 263.713 223.203 261.465C222.14 258.927 220.492 257.465 218.562 257.351C214.827 257.124 211.663 262.083 211.222 268.878C210.782 275.673 213.274 280.966 217.018 281.19C217.099 281.194 217.18 281.197 217.261 281.197ZM218.325 259.744C218.354 259.744 218.381 259.745 218.407 259.746C219.295 259.799 220.221 260.776 220.884 262.361C221.691 264.284 222.04 266.824 221.865 269.514C221.512 274.966 219.132 278.929 217.173 278.794C215.25 278.68 213.363 274.478 213.717 269.027C214.066 263.654 216.416 259.744 218.325 259.744Z" fill="#91826C"/>
+            <path d="M209.094 236.521C209.094 236.521 212.535 252.906 205.77 255.241C199.005 257.575 165.24 243.785 165.24 243.785L199.556 233.711L209.094 236.521Z" fill="#91826C"/>
+            <path d="M206.174 248.965C206.174 248.965 220.649 275.396 209.185 303.528C208.503 305.203 206.795 306.282 204.923 306.235C198.502 306.072 180.215 302.319 170.583 295.428L168.199 286.379L154.141 265.471C154.141 265.471 149.44 246.946 165.239 243.784C181.039 240.622 202.223 237.156 206.174 248.965Z" fill="#C79775"/>
+            <path d="M210.93 292.744C205.828 293.768 203.776 289.12 203.776 289.12" stroke="#383838" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M147.483 269.644C143.934 280.037 165.205 293.08 169.518 283.204C169.743 282.688 169.105 280.769 168.281 278.285C166.243 264.556 178.717 266.02 179.204 270.424C179.329 271.54 182.515 280.085 186.065 278.057C188.327 276.772 187.09 273.46 187.602 264.952C191.314 262.18 193.339 256.948 194.439 252.256C202.275 251.343 209.799 249.807 212.061 248.308C215.311 246.159 222.922 235.972 214.86 222.039C207.974 210.146 153.845 227.715 152.995 240.88C140.685 240.148 148.833 264.519 147.859 268.492C147.734 268.876 147.609 269.259 147.483 269.644Z" fill="black"/>
+            <path d="M211.403 267.287C211.403 267.287 221.596 281.856 221.114 283.853C220.633 285.851 210.929 284.481 210.929 284.481" fill="#C79775"/>
+            <path d="M178.531 274.389C178.531 274.389 173.438 266.059 170.721 272.393C168.555 277.442 173.176 286.558 176.335 285.295C179.423 284.058 174.91 278.027 174.91 278.027" stroke="#383838" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M195.742 269.794C196.029 269.794 196.321 269.731 196.595 269.596L203.585 266.16C204.506 265.706 204.871 264.622 204.399 263.737C203.926 262.852 202.796 262.502 201.875 262.956L194.886 266.391C193.965 266.845 193.599 267.93 194.071 268.814C194.404 269.436 195.06 269.794 195.742 269.794Z" fill="#383838"/>
+            <path d="M202.291 285.837C206.834 285.837 210.67 280.728 211.108 273.988C211.315 270.776 210.692 267.694 209.356 265.308C207.93 262.766 205.862 261.289 203.527 261.149C198.834 260.879 194.798 266.07 194.35 272.987C193.902 279.906 197.232 285.545 201.928 285.827C202.05 285.834 202.171 285.837 202.291 285.837ZM203.178 263.158C203.252 263.158 203.324 263.161 203.397 263.166C204.979 263.26 206.437 264.361 207.503 266.264C208.658 268.323 209.193 271.022 209.008 273.863C208.646 279.458 205.462 284.029 202.059 283.81C198.655 283.607 196.087 278.708 196.449 273.113C196.803 267.639 199.858 263.158 203.178 263.158Z" fill="#91826C"/>
+            <path d="M203.248 275.028C202.2 275.028 201.35 274.213 201.35 273.206C201.35 272.2 202.2 271.385 203.248 271.385C204.295 271.385 205.146 272.2 205.146 273.206C205.146 274.213 204.295 275.028 203.248 275.028Z" fill="#383838"/>
+            <path d="M217.792 272.674C216.897 272.674 216.173 271.977 216.173 271.118C216.173 270.259 216.897 269.563 217.792 269.563C218.687 269.563 219.412 270.259 219.412 271.118C219.412 271.977 218.687 272.674 217.792 272.674Z" fill="#383838"/>
+            <path d="M176.036 274.799C176.036 274.799 175.097 273.61 173.829 274.136" stroke="#383838" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M404.251 421.9H410.499L422.777 343.006L401.306 328.364V331.927L416.527 345.491L404.251 421.9Z" fill="#001E6C"/>
+            <path d="M242.492 567.699L227.516 611.683C227.516 611.683 298.707 613.349 299.846 610.797C300.985 608.245 267.027 594.805 246.51 596.228L255.3 577.425L242.492 567.699Z" fill="black"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M322.436 463.29C331.172 444.109 312.819 423.779 291.804 429.361L166.479 462.639C156.5 465.289 150.647 475.204 153.406 484.787C156.167 494.367 166.493 499.987 176.473 497.338L277.551 470.497L233.963 560.08C229.581 569.087 233.633 579.801 243.014 584.008C252.394 588.216 263.551 584.325 267.934 575.318L322.343 463.494L322.436 463.29Z" fill="#001E6C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M322.436 463.29C331.172 444.109 312.819 423.779 291.804 429.361L166.479 462.639C156.5 465.289 150.647 475.204 153.406 484.787C156.167 494.367 166.493 499.987 176.473 497.338L277.551 470.497L233.963 560.08C229.581 569.087 233.633 579.801 243.014 584.008C252.394 588.216 263.551 584.325 267.934 575.318L322.343 463.494L322.436 463.29Z" fill="black" fill-opacity="0.15"/>
+            <path d="M371.462 587.627L403.696 609.406C403.696 609.406 408.507 603.994 415.305 596.242C417.956 593.23 420.905 589.858 423.991 586.306C440.227 567.669 460.174 544.305 459.536 542.77C458.611 540.549 422.279 563.23 405.395 578.338C402.595 580.834 400.346 583.126 398.858 585.058L384.111 574.149L378.987 570.358L377.575 573.61L375.099 579.273L371.462 587.627Z" fill="black"/>
+            <path opacity="0.2" d="M374.366 580.958C374.366 580.958 402.135 590.747 407.169 593.685C412.204 596.623 414.038 597.694 414.038 597.694C416.688 594.681 419.435 591.542 422.521 587.99C417.306 583.617 411.571 580.46 405.396 578.338C402.597 580.834 400.347 583.126 398.86 585.058L384.113 574.149L377.575 573.61L374.366 580.958Z" fill="black"/>
+            <path d="M164.909 446.449L125.271 442.586C125.271 442.586 113.112 373.108 125.271 349.268C138.26 331.122 147.091 322.447 152.333 316.303C153.489 314.948 155.434 314.494 157.102 315.203L192.235 330.124C192.235 330.124 209.398 348.895 206.959 372.032C204.521 395.168 206.948 454.76 206.948 454.76L164.909 446.449Z" fill="#E6E6E6"/>
+            <path d="M206.498 449.81C206.497 449.81 206.497 449.81 206.497 449.809L206.498 449.81ZM206.335 449.741C206.28 449.721 206.211 449.699 206.124 449.674C205.676 449.548 204.959 449.413 203.985 449.272C202.047 448.991 199.199 448.702 195.703 448.4C190.91 447.984 184.932 447.547 178.478 447.075C175.525 446.859 172.473 446.636 169.389 446.404C159.572 445.665 149.441 444.842 141.221 443.897C137.112 443.424 133.47 442.92 130.58 442.378C128.149 441.924 126.185 441.431 124.923 440.883C124.919 440.902 124.916 440.92 124.912 440.939C124.841 441.303 124.791 441.827 124.77 442.505C124.727 443.857 124.802 445.745 125.005 448.021C125.41 452.569 126.323 458.62 127.809 464.944C129.295 471.271 131.35 477.849 134.031 483.462C136.709 489.065 139.976 493.63 143.856 496.062C149.174 498.009 155.719 497.769 162.612 496.252C169.521 494.733 176.71 491.946 183.235 488.896C189.757 485.848 195.598 482.543 199.81 480.002C201.915 478.731 203.613 477.652 204.782 476.891C205.367 476.51 205.82 476.208 206.126 476.002C206.206 475.949 206.275 475.902 206.335 475.862V449.741ZM125.043 440.51C125.043 440.51 125.042 440.511 125.041 440.514C125.042 440.511 125.043 440.51 125.043 440.51Z" fill="#001E6C" stroke="#DFE2E4" stroke-width="1.24375"/>
+            <path d="M152.428 613.007H206.169C208.241 613.007 209.919 611.395 209.919 609.407C209.919 607.419 208.241 605.807 206.169 605.807H150.225L152.428 613.007Z" fill="#001E6C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M294.364 470.883C287.302 463.675 277.452 459.587 267.144 459.587H156.092C144.358 459.587 134.846 468.72 134.846 479.987C134.846 491.254 144.358 500.388 156.092 500.388H264.929L352.018 589.291C360.057 597.498 373.504 597.894 382.052 590.174C390.598 582.455 391.011 569.544 382.971 561.337L294.364 470.883Z" fill="#001E6C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M294.364 470.883C287.302 463.675 277.452 459.587 267.144 459.587H156.092C144.358 459.587 134.846 468.72 134.846 479.987C134.846 491.254 144.358 500.388 156.092 500.388H264.929L352.018 589.291C360.057 597.498 373.504 597.894 382.052 590.174C390.598 582.455 391.011 569.544 382.971 561.337L294.364 470.883Z" fill="#001E6C"/>
+            <path d="M134.716 501.115H247.2C249.27 501.115 250.948 502.727 250.948 504.715C250.948 506.703 249.27 508.315 247.2 508.315H134.716V501.115Z" fill="#001E6C"/>
+            <path d="M151.805 613.09L91.4928 334.747C91.0743 332.815 92.3544 330.919 94.3626 330.497C96.4001 330.07 98.4095 331.321 98.8341 333.281L159.131 611.552L151.805 613.09Z" fill="#001E6C"/>
+            <path d="M122.28 449.522H220.827C224.961 449.522 228.311 452.74 228.311 456.709C228.311 460.677 224.961 463.894 220.827 463.894H122.28V449.522Z" fill="#001E6C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M151.806 613.09L150.229 605.813L150.227 605.807H150.228L91.4932 334.747C91.0747 332.816 92.3548 330.919 94.3629 330.497C96.4005 330.07 98.4099 331.321 98.8345 333.281L124.022 449.524H220.828C224.961 449.524 228.312 452.741 228.312 456.709C228.312 460.677 224.961 463.894 220.828 463.894H127.136L135.202 501.114H247.201C249.271 501.114 250.95 502.727 250.95 504.715C250.95 506.703 249.271 508.315 247.201 508.315H136.762L157.886 605.807H206.172C208.242 605.807 209.92 607.419 209.92 609.407C209.92 611.395 208.242 613.007 206.172 613.007H152.43L152.415 612.962L151.806 613.09Z" fill="white" fill-opacity="0.21"/>
+            <path d="M360.618 427.003H434.56V417.145C434.56 415.664 433.176 414.54 431.657 414.783L362.699 424.648C361.498 424.841 360.618 425.84 360.618 427.009V427.003Z" fill="#001E6C"/>
+            <path d="M385.485 401.94C388.599 402.526 391.618 400.577 392.229 397.588L426.242 230.942C426.852 227.952 424.823 225.053 421.709 224.467C418.594 223.881 415.576 225.83 414.965 228.82L380.951 395.465C380.34 398.455 382.37 401.355 385.485 401.94Z" fill="#001E6C"/>
+            <path d="M303.286 423.141H356.08V426.557H303.286V423.141Z" fill="#001E6C"/>
+            <path d="M292.639 401.068C292.639 401.068 311.737 386.118 317.437 386.51C323.137 386.902 348.858 414.658 346.732 420.879C344.608 427.099 336.142 423.141 336.142 423.141C332.265 423.141 325.219 421.373 323.378 418.098C321.197 414.218 310.975 423.141 308.418 423.141C303.285 423.141 292.639 414.268 292.639 414.268V401.068Z" fill="#C79775"/>
+            <path d="M156.092 356.934L175.858 413.868C177.926 419.824 186.357 431.477 192.832 430.604L281.74 410.361" stroke="#F2F2F2" stroke-width="39.8" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M308.156 613.62C308.156 615.275 309.556 616.608 311.28 616.608C365.972 616.451 406.279 615.984 413.989 615.42C417.327 615.167 419.939 614.22 421.976 612.515C426.801 608.472 427.163 601.391 426.675 598.224C425.351 589.536 414.565 585.887 403.129 582.023C397.518 580.114 391.718 578.159 386.506 575.531C361.748 563.063 342.4 532.714 346.713 513.082C350.162 497.362 369.072 488.001 387.356 478.953C405.916 469.761 435.061 461.085 432.975 445.952C432.412 441.932 430.899 437.996 428.425 434.204H400.517C404.217 437.588 407.991 441.548 409.165 446.456C411.052 454.34 401.754 465.069 384.495 473.624C365.821 482.864 344.663 493.341 340.601 511.846C338.139 523.054 341.726 536.818 350.712 550.607C359.148 563.542 371.134 574.559 383.606 580.846C389.218 583.666 395.231 585.707 401.054 587.674C410.652 590.927 419.714 593.986 420.489 599.087C420.789 601.031 420.539 605.759 417.876 607.991C416.876 608.82 415.452 609.287 413.502 609.432C405.941 609.996 365.809 610.452 311.268 610.607C309.544 610.607 308.144 611.964 308.156 613.62Z" fill="black"/>
+            <path opacity="0.71" d="M257.413 427.003H461.132V434.204H257.413V427.003Z" fill="#B5CDFB"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M105.507 280.682L114.662 316.349L129.194 312.911L112.457 247.705C111.468 243.852 107.414 241.497 103.401 242.448C99.3869 243.397 96.9358 247.29 97.9246 251.143L104.905 278.338L92.5768 279.948L107.997 346.967C108.147 347.615 108.814 348.024 109.488 347.88C110.162 347.737 110.588 347.097 110.439 346.449L95.6032 281.975L105.507 280.682Z" fill="#001E6C"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M105.507 280.682L114.662 316.349L129.194 312.911L112.457 247.705C111.468 243.852 107.414 241.497 103.401 242.448C99.3869 243.397 96.9358 247.29 97.9246 251.143L104.905 278.338L92.5768 279.948L107.997 346.967C108.147 347.615 108.814 348.024 109.488 347.88C110.162 347.737 110.588 347.097 110.439 346.449L95.6032 281.975L105.507 280.682Z" fill="white" fill-opacity="0.21"/>
+            <path d="M158.18 520.063H145.736L160.864 585.812" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M80.0651 612.217H12.2375" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path d="M209.919 612.217H104.015" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M535.949 226.924H700.076V225.724H535.949V226.924Z" fill="#B5CDFB"/>
+            <path d="M392.921 88.3921H663.172V102.228H392.921V88.3921Z" fill="black"/>
+            <path d="M216.03 138.402H80.0641" stroke="#78D2EE" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M216.03 128.939H80.0641" stroke="#78D2EE" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M812.226 216.859V192.999H786.097" stroke="#DFE2E4" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M587.928 443.601V515.502" stroke="#DFE2E4" stroke-width="1.24375" stroke-miterlimit="10"/>
+            <path d="M444.26 613.608C444.26 613.608 466.131 590.653 461.132 590.653C456.133 590.653 442.385 601.453 442.385 601.453C442.385 601.453 436.21 578.5 423.712 567.699C423.712 567.699 421.085 587.852 423.584 598.652C423.584 598.652 415.979 581.806 405.981 585.406C405.981 585.406 413.747 612.427 415.514 613.608" stroke="#DFE2E4" stroke-width="1.01001" stroke-miterlimit="10" stroke-linecap="round"/>
+            </svg>
+    </div>
+
+    <div class="flex-item-right" data-aos="fade-right">
+  <h2 style="margin-top:32vh ; font-size: 60px; text-align: left; font-weight: bold; ">Our <span style="color: #0051ed "> only concern is your</span> Education </h2>
+
+
+</div>
+
+    </div>
+
+    <br>
+
+    <!-- <hr> -->
+
+
+    <div class="container" style="padding-left: 12%; padding-right: 6px; margin-top: 8%;">
+  <img src="css/v1.png" alt="" width="1100">
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- <div class="container">
+<h2 style="font-size:20 ; text-align: left; padding-top: 20px; font-weight: bold;" >Recommended Courses</h2>
+
+<% for(var i=0;i<he.length;i++){ %>
+  <br>
+  <div class="fe" style="display: flex;">
+  <video width="320" height="240" controls="controls autoplay" style="margin-left: 5vh;">
+    <source src="upload/<%=he[i] %>" type="video/mp4" />
+  </video>
+
+  <% } %>
+
+
+<div class="container" style="width: 350; height: 240; background-color: rgb(14, 13, 13); margin-left: 15vh;" > -->
+  <!-- <video width="320" height="210" controls="controls autoplay" style="margin-left: 5vh; margin-top: 4.5vh;">
+    <h3>View More</h3>
+    <source src="#" type="video/mp4" />
+  </video> -->
+ <!-- </div> -->
+<section id="features">
+
+    <h1>Our features</h1>
+
+    <div class="container ">
+    <div class="row">
+      <div class="col-sm">
+        <img src="images/1.png" alt="" width="70" height="70">
+
+         <h3>Web IDE</h3>
+         <p>Our Web application provides the users our own custom made IDE to practice coding so that they can implement the skills they learn.</p>
+      </div>
+      <div class="col-sm">
+        <img src="images/2.png" alt="" width="70" height="70">
+
+         <h3>Online Lectures</h3>
+         <p>We have made our own web conferencing app using which the user can take lectures from professionals.</p>
+      </div>
+      <div class="col-sm">
+        <img src="images/3.png" alt="" width="70" height="70">
+
+         <h3>Gyan</h3>
+         <p>"Gyan" section contains brain-teaser and basic aptitude questions which helps to improve users thinking and imagination skills.</p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-sm">
+        <img src="images/4.png" alt="" width="70" height="70">
+
+         <h3>24x7 chat-system</h3>
+         <p>We have implemented a 24x7 chat-system which helps the users to solve any issue he is facing in our web-application. </p>
+      </div>
+      <div class="col-sm">
+        <img src="images/5.png" alt="" width="70" height="70">
+
+         <h3>Chatbot</h3>
+         <p>We have implemented an AI-driven chatbot which will guide the user throughout our web-application</p>
+      </div>
+      <div class="col-sm">
+        <img src="images/1.png" alt="" width="70" height="70">
+
+         <h3>Discussion Forum</h3>
+         <p>Our Web-application contains a discussion forum where the teachers and other students help to solve your doubts.</p>
+      </div>
+
+    </div>
+    <!-- <div class="row">
+      <div class="col-sm">
+        <img src="images/1.png" alt="" width="70" height="70">
+
+         <h3>Web IDE</h3>
+         <p>Our Web application provides the users our own custom made IDE to practice coding so that they can implement the skills they learn.</p>
+      </div>
+      <div class="col-sm">
+        <img src="images/1.png" alt="" width="70" height="70">
+
+         <h3>Web IDE</h3>
+         <p>Our Web application provides the users our own custom made IDE to practice coding so that they can implement the skills they learn.</p>
+      </div>
+      <div class="col-sm">
+        <img src="images/1.png" alt="" width="70" height="70">
+
+         <h3>Web IDE</h3>
+         <p>Our Web application provides the users our own custom made IDE to practice coding so that they can implement the skills they learn.</p>
+      </div>
+
+    </div> -->
+  </div>
+
+</section>
+<br><br>
+
+
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register or  </h5>
+          <br>
+          <br>
+
+          <div class="col-sm-4" style="margin-left: 3vh; ">
+            <div class="card social-block">
+              <div class="card-body"  >
+                <a class="btn btn-block" href="/auth/google" role="button">
+                  <i class="fab fa-google"></i>
+                  Sign Up with Google
+                </a>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/register" method="POST">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Enter your e-mail:</label>
+              <input type="text" class="form-control" id="recipient-name" name="username">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Number</label>
+              <input type="text" class="form-control" id="recipient-name" name="number">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Password</label>
+              <input type="password" class="form-control" id="recipient-name" name="password">
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" type="submit">Register</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel1">Login or </h5>
+          <div class="col-sm-4" style="margin-left: 3vh; ">
+            <div class="card social-block">
+              <div class="card-body"  >
+                <a class="btn btn-block" href="/auth/google" role="button">
+                  <i class="fab fa-google"></i>
+                  Sign In with Google
+                </a>
+              </div>
+            </div>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="/login" method="POST">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Enter your e-mail:</label>
+              <input type="text" class="form-control" id="recipient-name" name="username">
+            </div>
+
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Password</label>
+              <input type="password" class="form-control" id="recipient-name" name="password">
+            </div>
+
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button class="btn btn-primary" type="submit">Login</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+ <br>
+ <br>
+ <br>
+
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+
+
+        <h4>Courses</h4>
+        <ul>
+          <!-- <li><a href="/videof">Frontend Development</a></li>
+          <li><a href="/video1">Backend Development</a></li>
+          <li><a href="/video2">Full-Stack Development</a></li> -->
+          <br>
+          <br>
+          <br><br><br>
+          <!-- <li><img src="css/Webify.png" width="110px" height="40px" alt=""></li> -->
+
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Features</h4>
+        <ul>
+          <li><a href="/ide">Web IDE</a></li>
+          <li><a href="http://localhost:800/">Discussion Forum</a></li>
+          <li><a href="#">Live Streaming</a></li>
+          <li><a href="https://hidden-island-71466.herokuapp.com/">Daily Updates</a></li>
+          <li><a href="/video1">Resources Access</a></li>
+          <li><a href="#">Quiz Section</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Additional Info</h4>
+        <ul>
+          <li><a href="#">T&C</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <p>PaathShala is an educational website that will help you become a full-fledge learner with courses tailored for anyone and everyone - a beginner can start learning from scratch & a novice and brush up on their skills.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://kit.fontawesome.com/ae8f1db1af.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+  -->
+  <script type="text/javascript">
+    (function(d, m){
+        var kommunicateSettings =
+            {"appId":"4cf91a7669b5296d89a5e348bf409ffd","popupWidget":true,"automaticChatOpenOnNavigation":true};
+        var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+        s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+        var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+        window.kommunicate = m; m._globals = kommunicateSettings;
+    })(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+  </body>
+</html>
