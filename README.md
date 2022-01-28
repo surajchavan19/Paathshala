@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Webify is an educational website that will help you become a great Programmer with courses tailored for anyone and everyone - a beginner can start learning from scratch & a novice and brush up on their skills.
+Paathshala is an educational website that will help you become a great Programmer with courses tailored for anyone and everyone - a beginner can start learning from scratch & a novice and brush up on their skills.
 Students will have access to a variety of video courses at ease
 One of the best ways to learn is to write your code as often as possible. Hence, we have provided students with their Web IDE to write code on their own.
 We have created a discussion forum where students can post their doubts. These doubts will be attended to by the instructor.
