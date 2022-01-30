@@ -26,3 +26,4 @@ CSS, JavaScript, MongoDB, Node.js, Express.js, EJS, Passport.js, WebSocket, Peer
 4) Type node app.js / nodemon app.js
 5) Open localhost on your browser
 
+Type /admin to and /instlogin to access the admin and teacher portal
