@@ -1,5 +1,4 @@
 # Paathshala
-[Click here to view the project video]( https://www.youtube.com/watch?v=l34-mRZnnIU )
 
 ## Introduction
 
